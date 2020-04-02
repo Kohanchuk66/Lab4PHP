@@ -1,5 +1,6 @@
 
 <?php
+	//print_r($_POST);
     function reverse( $str, $num = 0 ){
         if( $num != strlen( $str ) - 1 ){
             reverse( $str, $num + 1 );
@@ -13,4 +14,7 @@
     else{
         echo 'Масив не закінчується 0';
     }
+    echo'<form name="inputArray" action="index.html" method="post">
+    		<button name="input">Повернутись</button>
+    	</form>';
 ?>
